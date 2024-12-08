@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <section class="search">
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter location (e.g., delhi, IN or New York, US)"
+            />
+            <button id="getWeather">Get Weather</button>
+            <p class="help-text">
+                Tip: Include the country code for better results (e.g., "delhi, IN or Paris, FR").
+            </p>
+        </section>
+        <section id="weatherInfo" class="hidden">
+            <h2 id="cityName"></h2>
+            <div class="weather-image-container">
+                <img id="weatherIcon" alt="Weather Icon" />
+            </div>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
